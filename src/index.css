@@ -1,0 +1,327 @@
+* {
+  font-family: Verdana, Tahoma, sans-serif;
+  line-height: 1.1;
+}
+
+html {
+  scroll-padding-top: 100px;
+}
+
+body {
+  /* background-image: url(../images/eberhard-grossgasteiger-dSVZ2Qy-caE-unsplash.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: black;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/*Left Header*/
+header section {
+  color: white;
+  flex-grow: 1;
+  padding: 34px 0px 0px 10px;
+}
+
+header section h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+header section h4 {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 5px 0px 0px 5%;
+}
+
+/*Right Header*/
+
+header div {
+  min-width: 33%;
+  text-align: center;
+}
+
+header div figure {
+  /* background-image: url(../images/mirza-mustofa-RPnXl6Rpvk0-unsplash-edited.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 64px;
+}
+
+/*Navigation buttons*/
+header div nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  color: white;
+  font-size: 16px;
+  font-weight: 0;
+  padding: 5px;
+}
+
+header nav a {
+  margin: 2px;
+  padding: 3px;
+  color: white;
+  font-size: 16px;
+  font-weight: 0;
+  text-decoration: none;
+  background: linear-gradient(to bottom, black 50%, rgb(71, 71, 71) 50%) top;
+  background-size: 100% 200%;
+  transition: .25s ease-out;
+}
+
+header nav a:hover {
+  background-position: bottom;
+}
+
+
+
+/*Main*/
+
+main {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+}
+
+main .main-groups {
+  margin: 450px 75px 0px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: black;
+  color: white;
+}
+
+/*Profile*/
+main .profile {
+  margin: 10px 5px;
+  border-bottom: 1px solid white;
+}
+
+main .profile h2 {
+  font-size: 24px;
+}
+
+main .profile p {
+  margin: 10px;
+}
+
+/*Projects*/
+
+main ul li {
+  margin: 3px 0px;
+}
+
+
+/*footer*/
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Classes*/
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+}
+
+.projects {}
+
+.projects img {
+  margin: 0px 3px 3px 0px;
+  float: left;
+  width: 750px;
+  height: 375px;
+}
+
+.projects:nth-child(2n+1) img {
+  margin: 0px 0px 3px 3px;
+  float: right;
+}
+
+.projects:hover img {
+  transition: .4s ease-out;
+  width: 850px;
+  height: 425px;
+}
+
+.projects div {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.projects a {
+  text-decoration: none;
+  color: White;
+  font-size: 22px;
+  margin: 5px 3px;
+}
+
+.projects p {
+  font-size: 14px;
+  margin: 2px 3px;
+  flex-grow: 1;
+}
+
+.skillcard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 5px 0px 20px 0px;
+}
+
+.skillcard {
+  border: 3px solid transparent;
+  width: 33.333333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillcard img {
+
+  width: 200px;
+  height: 100px;
+}
+
+.skillcard h3 {
+  font-size: 16px;
+}
+
+.skillcard p {
+  font-size: 11px;
+}
+
+.footer-link {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#top-project {
+  border-radius: 0px 5px 0px 0px;
+}
+
+#radius-circle {
+  border-radius: 50%;
+  height: 90px;
+  margin: 5px 0px 0px 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  .projects img {
+    width: 650px;
+    height: 325px;
+  }
+
+  .projects:hover img {
+    width: 750px;
+    height: 375px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .projects img {
+    width: 450px;
+    height: 225px;
+  }
+
+  .projects:hover img {
+    width: 550px;
+    height: 275px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main .main-groups {
+    margin: 350px 36px 0px;
+  }
+
+  .projects img {
+    width: 400px;
+    height: 200px;
+  }
+
+  .projects:hover img {
+    width: 500px;
+    height: 250px;
+  }
+
+  .skillcard {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    scroll-padding-top: 175px;
+  }
+
+  header {
+    height: 220px;
+  }
+
+  header section h1 {
+    font-size: 24px;
+    width: 100%;
+    padding: 12px 19px 0px;
+  }
+
+  header section h4 {
+    font-size: 14px;
+    margin: 3px 30px 12px;
+  }
+
+  header div figure {
+    width: 768px;
+  }
+
+  main .main-groups {
+    margin: 450px 20px 0px;
+  }
+
+  .projects img {
+    width: 300px;
+    height: 150px;
+  }
+
+  .projects:hover img {
+    width: 350px;
+    height: 175px;
+  }
+
+  .skillcard {
+    width: 100%;
+  }
+
+  #radius-circle {
+    border-radius: 50%;
+    height: 90px;
+    text-align: center;
+    margin: 10px;
+  }
+}
